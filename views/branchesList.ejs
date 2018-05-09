@@ -1,0 +1,25 @@
+<!--<a href="#" id="add_button_nav" name=b class="nav-link" role="button" data-toggle="modal"-->
+   <!--data-target="#myModal4">Add-->
+<!--</a>-->
+
+<!--<button id="refresh_user" >Refresh</button>-->
+
+<div class="container" id="catalog-con">
+    <div class="row">
+        <div class="row text-center">
+
+            <% a.forEach(function (branch) { %>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card">
+                    <img class="card-img-top" src=<%= branch.src %> alt="">
+                    <div class="card-body">
+                        <h4 class="card-title"><%= branch.name%></h4>
+                        <p class="card-text"><%= branch.address%></p>
+                        <p class="card-text"><%= branch.phone%></p>
+                    </div>
+                </div>
+            </div>
+            <% })%>
+        </div>
+    </div>
+</div>

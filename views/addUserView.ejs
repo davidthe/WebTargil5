@@ -1,0 +1,61 @@
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+     style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header" align="center">
+        <!--<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">-->
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <!-- Begin # DIV Form -->
+      <div id="div-forms">
+
+        <!-- Begin # add Form -->
+        <form id="add-user-form">
+
+          <div class="modal-body">
+            <div id="div-add-msg">
+              <div id="icon-add-msg" class="glyphicon glyphicon-chevron-right"></div>
+              <span id="text-add-msg">Add user</span>
+            </div>
+            <input id="add_username" class="form-control" type="text"
+                   placeholder="Username (type ERROR for error effect)" required>
+            <!--<input id="add_type" class="form-control" type="text"-->
+            <!--placeholder="type (type ERROR for error effect)" required>-->
+            <div class="form-group">
+              <label for="type">
+                Type</label>
+              <select id="add_type" name="add_type" class="form-control" required="required">
+                  <% if(a=="MANAGER"){%>
+                <option value="MANAGER">MANAGER</option>
+                <option value="WORKER">WORKER</option>
+                <option value="CLIENT">CLIENT</option>
+                <option value="SUPPLIER">SUPPLIER</option>
+                  <%}%>
+                  <% if(a=="WORKER"){%>
+                <option value="CLIENT">CLIENT</option>
+                  <%}%>
+              </select>
+            </div>
+            <input id="add_password" class="form-control" type="password" placeholder="Password" required>
+            <!--<div class="checkbox">-->
+            <!--<label>-->
+            <!--<input type="checkbox"> Remember me-->
+            <!--</label>-->
+            <!--</div>-->
+          </div>
+          <div class="modal-footer">
+            <div>
+              <button type="submit" class="btn btn-primary btn-lg btn-block">add</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <!-- End # DIV Form -->
+
+    </div>
+  </div>
+</div>

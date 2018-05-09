@@ -1,0 +1,28 @@
+
+<a href="#" id="add_button_nav" name=b class="nav-link" role="button" data-toggle="modal"
+   data-target="#myModal3">Add
+</a>
+
+<!--<button id="refresh_user" >Refresh</button>-->
+
+
+
+<div class="container" id="catalog-con">
+    <div class="row">
+        <div class="row text-center">
+
+            <% a.forEach(function (flower) { %>
+            <div class="col-lg-auto">
+                <div class="card">
+                    <img class="card-img-top" src=<%=flower.src%> >
+                    <div class="card-body">
+                        <h4 class="card-title"><%= flower.name%></h4>
+                        <p class="card-text"><%= flower.color%></p>
+                        <p class="card-text"><%= flower.price%></p>
+                    </div>
+                </div>
+            </div>
+            <% })%>
+        </div>
+    </div>
+</div>

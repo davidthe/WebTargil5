@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+    <!--links for css-->
+    <!-- Custom CSS -->
+    <link href="css/shop-homepage.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+
+
+    <link href="/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+    <!-- Plugin CSS -->
+    <link href="/css/magnific-popup.css" rel="stylesheet" type="text/css">
+    <!-- Custom Styles -->
+    <link href="/css/styles.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+
+  </head>
+
+  <body>
+  <img id="logo" src="images/logo1.jpg">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Shopie Flower </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+
+            <li class="nav-item">
+              <a id="flower_catalog" class="nav-link" href="#">Catalog</a>
+            </li>
+
+            <li class="nav-item" >
+              <a href="#" id="login_button_nav" class="nav-link" role="button" data-toggle="modal"
+                 data-target="#login-modal">Login</a>
+            </li>
+            <li class="nav-item">
+              <a id="edit_user" class="nav-link" href="#">Users</a>
+            </li>
+            <li class="nav-item">
+              <a id="edit_branch" class="nav-link" href="#">Branches</a>
+            </li>
+            <li class="nav-item">
+              <a id="contact_button" class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a id="about_button" class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item" >
+              <a href="/" id="logout_button_nav" class="nav-link" role="button">Logout</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" id="default-container">
+
+      <!-- Jumbotron Header -->
+      <header id="headerbac" class="jumbotron my-4" >
+        <h1 id="title" class="display-3">Shopie Flower</h1>
+        <!--<div class="container">-->
+          <!--<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">about the company-->
+          <!--</button>-->
+          <!--<div id="demo" class="collapse">-->
+            <!--</br>-->
+            <!--A company of flowers headed by David Mizrachi and Elia halle.-->
+            <!--</br>-->
+            <!--This company is familiar with flowers for various events such as bar / bat mitzvah weddings and especially Chabad events.-->
+          <!--</div>-->
+        <!--</div>-->
+      </header>
+
+      <div id="dynamic-body">
+        <div class="col-md-9" id="welcome_page">
+          <!--<img class="img-fluid mb-5 d-block mx-auto pagination-centered" id="logo" src="images/logos/profile.png"-->
+               <!--alt="">-->
+        </div>
+      </div>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+
+
+    <!-- BEGIN # MODAL LOGIN -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+         style="display: none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header" align="center">
+            <!--<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">-->
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <!-- Begin # DIV Form -->
+          <div id="div-forms">
+
+            <!-- Begin # Login Form -->
+            <form id="login-form">
+              <div class="modal-body">
+                <div id="div-login-msg">
+                  <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                  <span id="text-login-msg">Type your username and password.</span>
+                </div>
+                <input id="login_username" class="form-control" type="text"
+                       placeholder="Username (type ERROR for error effect)" required>
+                <input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                <!--<div class="checkbox">-->
+                  <!--<label>-->
+                    <!--<input type="checkbox"> Remember me-->
+                  <!--</label>-->
+                <!--</div>-->
+              </div>
+              <div class="modal-footer">
+                <div>
+                  <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                </div>
+              </div>
+            </form>
+            <!-- End # Login Form -->
+
+          </div>
+          <!-- End # DIV Form -->
+
+        </div>
+      </div>
+    </div>
+    <!-- END # MODAL LOGIN -->
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+       style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <!--<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <!-- Begin # DIV Form -->
+        <div id="div-forms">
+
+          <!-- Begin # add Form -->
+          <form id="add-user-form">
+
+            <div class="modal-body">
+              <div id="div-add-msg">
+                <div id="icon-add-msg" class="glyphicon glyphicon-chevron-right"></div>
+                <span id="text-add-msg">Add user</span>
+              </div>
+              <input id="add_username" class="form-control" type="text"
+                     placeholder="Username (type ERROR for error effect)" required>
+              <!--<input id="add_type" class="form-control" type="text"-->
+                     <!--placeholder="type (type ERROR for error effect)" required>-->
+              <div class="form-group">
+                <label for="type">
+                  Type</label>
+                <select id="add_type" name="add_type" class="form-control" required="required">
+                    <option value="MANAGER">MANAGER</option>
+                  <option value="WORKER">WORKER</option>
+                  <option value="CLIENT">CLIENT</option>
+                </select>
+              </div>
+              <input id="add_password" class="form-control" type="password" placeholder="Password" required>
+            </div>
+            <div class="modal-footer">
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">add</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <!-- End # DIV Form -->
+
+      </div>
+    </div>
+  </div>
+
+<!catalog---->
+
+
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+       style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" align="center">
+          <!--<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">-->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <!-- Begin # DIV Form -->
+        <div id="div-forms">
+
+          <!-- Begin # add Form -->
+          <form id="add-catalog-form">
+
+            <div class="modal-body">
+              <div id="div-add-msg">
+                <div id="icon-add-msg" class="glyphicon glyphicon-chevron-right"></div>
+                <span id="text-add-msg">Name</span>
+              </div>
+              <input id="add_name" class="form-control" type="text" required>
+              <span id="text-add-msg">Price</span>
+              <input id="add_price"  class="form-control" type="number"   required>
+              <span id="text-add-msg">Color</span>
+              <input id="add_color" class="form-control" type="text"   required>
+                <span type="radio" id="add_src" name="imgsrc" value="file_src">Photo file</span>
+                <input type="file" id="img_file" name="img_file" placeholder="בחר תמונה"  class="form-control" required>
+                <span type="radio" id="add_url" name="imgsrc" value="url_src">Url image</span>
+                <input type="text" id="img_url" name="img_url" class="form-control" placeholder="הכנס URL של תמונה" >
+
+            </div>
+            <div class="modal-footer">
+              <div>
+                <button type="submit" class="btn btn-primary btn-lg btn-block">add</button>
+              </div>
+            </div>
+          </form>
+
+        </div>
+        <!-- End # DIV Form -->
+
+      </div>
+    </div>
+  </div>
+
+<!---->
+  <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+       style="display: none;">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header" align="center">
+                  <!--<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">-->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+              </div>
+
+              <!-- Begin # DIV Form -->
+              <div id="div-forms">
+
+                  <!-- Begin # add Form -->
+                  <form id="add-branch-form">
+
+                      <div class="modal-body">
+                          <div id="div-add-msg">
+                              <div id="icon-add-msg" class="glyphicon glyphicon-chevron-right"></div>
+                              <span id="text-add-msg">Name</span>
+                          </div>
+                          <input id="add_nameB" class="form-control" type="text"
+                                 placeholder="Username (type ERROR for error effect)" required>
+                          <span id="text-add-msg">Address</span>
+                          <input id="add_address" class="form-control" type="text"   required>
+                          <span id="text-add-msg">Phone</span>
+                          <input id="add_phone" class="form-control" type="text"  required>
+                          <span id="text-add-msg">Src</span>
+                          <input id="add_srcB" class="form-control" type="text"  required>
+                      </div>
+                      <div class="modal-footer">
+                          <div>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block">add</button>
+                          </div>
+                      </div>
+                  </form>
+
+              </div>
+              <!-- End # DIV Form -->
+
+          </div>
+      </div>
+  </div>
+
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
+       style="display: none;">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header" align="center">
+                  <!--<img class="img-circle" id="img_logo" src="http://bootsnipp.com/img/logo.jpg">-->
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                  </button>
+              </div>
+
+              <!-- Begin # DIV Form -->
+              <div id="div-forms">
+
+                  <!-- Begin # edit Form -->
+                  <form id="edit-user-form">
+
+                      <div class="modal-body">
+                          <div id="div-edit-msg">
+                              <div id="icon-edit-msg" class="glyphicon glyphicon-chevron-right"></div>
+                              <span id="text-edit-msg">edit user</span>
+                          </div>
+                          <input id="edit_username" class="form-control" type="text"
+                                 placeholder="Username (type ERROR for error effect)" required>
+                          <!--<input id="edit_type" class="form-control" type="text"-->
+                                 <!--placeholder="type (type ERROR for error effect)" required>-->
+                        <div class="form-group">
+                          <label for="edit_type">
+                            Type</label>
+                          <select id="edit_type" name="edit_type" class="form-control" required="required">
+                              <option value="MANAGER">MANAGER</option>
+                            <option value="WORKER">WORKER</option>
+                            <option value="CLIENT">CLIENT</option>
+                          </select>
+                        </div>
+                          <input id="edit_password" class="form-control" type="password" placeholder="Password" required>
+                      </div>
+                      <div class="modal-footer">
+                          <div>
+                              <button type="submit" class="btn btn-primary btn-lg btn-block">save</button>
+                          </div>
+                      </div>
+                  </form>
+
+              </div>
+              <!-- End # DIV Form -->
+
+          </div>
+      </div>
+  </div>
+
+
+
+
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!--<script type="text/javascript" src="js/playaudio.js"></script>-->
+
+    <!--<script src="js/jquery.js"></script>-->
+
+    <!--&lt;!&ndash; Bootstrap Core JavaScript &ndash;&gt;-->
+    <!--<script src="js/bootstrap.js"></script>-->
+
+    <script src="js/login.js"></script>
+
+    <!--<script src="js/addUser.js"></script>-->
+
+
+  <script src="js/usersOptions.js"></script>
+
+    <script src="js/user_man.js"></script>
+
+    <!--<script src="js/userJs.js"></script>-->
+
+  </body>
+
+</html>

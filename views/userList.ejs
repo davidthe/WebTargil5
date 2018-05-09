@@ -1,0 +1,37 @@
+
+
+    <a href="#" id="add_button_nav" name=a class="nav-link" role="button" data-toggle="modal"
+       data-target="#myModal2">Add
+    </a>
+    <!--<button type="button" onclick="add_user_Function()"  class="btn btn-default" aria-label="Left Align">-->
+        <!--Add-->
+    <!--</button>-->
+
+    <button id="refresh_user" onclick="refresh_users()" >Refresh</button>
+
+<div class="container">
+    <div class="row">
+        <div class="row text-center">
+            <% a.forEach(function (user) { %>
+            <% if(user.flag==1){%>
+            <div class="col-md-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 id="usernamevalue" class="card-title"><%= user.username%></h4>
+                        <p class="card-text"><%= user.type%></p>
+                        <% if(b=="MANAGER"&&user.type=="WORKER"){%>
+                        <button id="removebuton" type="button" onclick="remove_user_Function('<%=user._id%>')" class="btn btn-default" aria-label="Left Align">
+                            remove
+                        </button>
+                        <button id="removebuton" type="button" onclick="promote_user_Function('<%=user._id%>')" class="btn btn-default" aria-label="Left Align">
+                            promote
+                        </button>
+                        <%}%>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+            <% })%>
+        </div>
+    </div>
+</div>

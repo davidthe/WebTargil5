@@ -1,0 +1,28 @@
+{
+  "name": "lab5",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+//    "start": "node ./bin/www",
+//    "mongo": "node mongo.js",
+//    "add": "node adduser.js",
+//    "list": "node listusers.js",
+//    "clear": "node cleardb.js",
+//    "trymongo": "node test.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "^2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "http-errors": "~1.6.2",
+    "mongoose": "^5.0.17",
+    "morgan": "~1.9.0",
+    "multer": "^1.3.0"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
